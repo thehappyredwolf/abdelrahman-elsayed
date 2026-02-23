@@ -25,7 +25,7 @@ Welcome to my online presence. Here, I showcase my projects, experiences, and bl
 ## Getting Started
 
 1. Clone the repository:
-    `git clone <your-repo-url>`
+    `git clone <repo-url>`
     `cd <repo-folder>`
 2. Install dependencies:
     `pnpm install`
