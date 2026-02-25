@@ -55,6 +55,13 @@ title: "Projects"
   pointer-events: none;
   display: block;
 }
+.project-info h2 {
+  margin: 0 0 0.2em 0;
+}
+.project-info .project-desc {
+  margin-bottom: 0.5em;
+  color: #666;
+}
 .project-tags {
   display: flex;
   flex-wrap: wrap;
@@ -68,6 +75,37 @@ title: "Projects"
   font-size: 0.9em;
   display: inline-block;
   font-weight: 500;
+}
+
+/* Tablet: stack card vertically */
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .project-image-link {
+    min-width: unset;
+    width: 100%;
+    height: 200px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .project-card {
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+  }
+  .project-image-link {
+    height: 160px;
+    border-radius: 0.75rem;
+  }
+  .project-tags span {
+    font-size: 0.8em;
+    padding: 0.2em 0.75em;
+  }
 }
 </style>
 
