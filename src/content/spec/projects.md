@@ -71,10 +71,22 @@ title: "Projects"
   background: oklch(0.95 0.02 var(--hue, 250));
   color: oklch(0.45 0.10 var(--hue, 250));
   border-radius: 9999px;
-  padding: 0.25em 1em;
-  font-size: 0.9em;
-  display: inline-block;
+  padding: 2px 10px;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
   font-weight: 500;
+  line-height: 20px;
+  height: 24px;
+  box-sizing: border-box;
+}
+.project-tags span img {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  display: block;
+  pointer-events: none;
 }
 
 /* Tablet: stack card vertically */
@@ -103,8 +115,9 @@ title: "Projects"
     border-radius: 0.75rem;
   }
   .project-tags span {
-    font-size: 0.8em;
-    padding: 0.2em 0.75em;
+    font-size: 12px;
+    padding: 2px 8px;
+    height: 22px;
   }
 }
 </style>
@@ -119,10 +132,10 @@ title: "Projects"
       <h2 style="margin: 0 0 0.2em 0;">abdelrahmanelsayed.tech</h2>
       <div style="margin-bottom: 0.5em; color: #444;">My personal website and blog.</div>
       <div class="project-tags">
-        <span>Astro</span>
-        <span>TypeScript</span>
-        <span>TailwindCSS</span>
-        <span>Svelte</span>
+        <span><img src="https://cdn.simpleicons.org/astro" alt=""/>Astro</span>
+        <span><img src="https://cdn.simpleicons.org/typescript" alt=""/>TypeScript</span>
+        <span><img src="https://cdn.simpleicons.org/tailwindcss" alt=""/>TailwindCSS</span>
+        <span><img src="https://cdn.simpleicons.org/svelte" alt=""/>Svelte</span>
       </div>
     </div>
   </div>
