@@ -10,6 +10,13 @@ type Props = { frontmatter: ArticleFrontmatter };
 const { frontmatter } = Astro.props;
 const articleDate = processArticleDate(frontmatter.timestamp);
 const { data: config } = await getConfigurationCollection();
+
+const metaDescription =
+  frontmatter.longDescription ??
+  frontmatter.description ??
+  config.blogMeta.longDescription ??
+  config.blogMeta.description ??
+  "";
 ---
 
 <Layout>
@@ -17,13 +24,16 @@ const { data: config } = await getConfigurationCollection();
     <title>{`${frontmatter.title} • ${config.personal.name}`}</title>
     <meta
       name="description"
-      content={frontmatter.longDescription ?? frontmatter.description}
+      content={metaDescription}
     />
     <meta
       property="og:title"
       content={`${frontmatter.title} • ${config.personal.name}`}
     />
-    <meta property="og:description" content={frontmatter.description} />
+    <meta
+      property="og:description"
+      content={metaDescription}
+    />
     {
       frontmatter.tags && (
         <meta name="keywords" content={frontmatter.tags.join(", ")} />
@@ -43,7 +53,10 @@ const { data: config } = await getConfigurationCollection();
       name="twitter:title"
       content={`${frontmatter.title} • ${config.personal.name}`}
     />
-    <meta name="twitter:description" content={frontmatter.description} />
+    <meta
+      name="twitter:description"
+      content={metaDescription}
+    />
     {
       frontmatter.cardImage && (
         <meta name="twitter:image" content={frontmatter.cardImage} />
@@ -65,12 +78,11 @@ const { data: config } = await getConfigurationCollection();
       </h1>
       <div class="flex justify-between">
         <span>{articleDate}</span>
-        <span>{frontmatter.readTime} min</span>
+        {frontmatter.readTime ? <span>{frontmatter.readTime} min</span> : null}
       </div>
     </div>
     <Prose>
       <slot />
     </Prose>
-    <p class="pt-8">~{config.personal.name}</p>
   </Section>
 </Layout>

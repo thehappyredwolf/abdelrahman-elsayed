@@ -1,1 +1,42 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 540 540" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><path d="M553.75,-14.97l-0.146,564.085l-599.591,-0.156l0.146,-564.084l599.591,0.155Z" style="fill:#f5f5f5;"/><rect x="55.333" y="122.703" width="429.334" height="91.624" style="fill:#171717;"/><rect x="55.333" y="325.673" width="429.334" height="91.624" style="fill:#171717;"/><path d="M443.954,132.483l40.713,82.081l-388.621,192.756l-40.713,-82.081l388.621,-192.756Z" style="fill:#171717;"/><path d="M234.034,0l37.284,83.695l-271.318,120.862l-37.283,-83.695l271.317,-120.862Z" style="fill:#f5f5f5;"/><path d="M530.873,335.443l37.283,83.695l-271.318,120.862l-37.283,-83.695l271.318,-120.862Z" style="fill:#f5f5f5;"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="stroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22c55e" />
+      <stop offset="0.45" stop-color="#0ea5e9" />
+      <stop offset="1" stop-color="#fb7185" />
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.18" />
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+    <clipPath id="clip">
+      <rect x="8" y="8" width="112" height="112" rx="26" />
+    </clipPath>
+  </defs>
+
+  <rect x="8" y="8" width="112" height="112" rx="26" fill="#0b1020" />
+  <rect x="8" y="8" width="112" height="112" rx="26" fill="none" stroke="url(#stroke)" stroke-width="6" />
+
+  <g clip-path="url(#clip)" opacity="0.14">
+    <path d="M-20 28 L40 -32 L56 -16 L-4 44 Z" fill="#0ea5e9" />
+    <path d="M10 120 L110 20 L124 34 L24 134 Z" fill="#fb7185" />
+    <path d="M70 150 L150 70 L166 86 L86 166 Z" fill="#22c55e" />
+  </g>
+
+  <rect x="12" y="12" width="104" height="48" rx="22" fill="url(#glow)" />
+
+  <g fill="#f8fafc" transform="translate(0 2)">
+    <!-- A -->
+    <path d="M24 96 L38 96 L58 36 L44 36 Z" />
+    <path d="M54 36 L68 36 L88 96 L74 96 Z" />
+    <rect x="40" y="66" width="34" height="12" rx="4" />
+
+    <!-- E -->
+    <rect x="82" y="40" width="12" height="54" rx="4" />
+    <rect x="94" y="40" width="18" height="12" rx="4" />
+    <rect x="94" y="61" width="16" height="12" rx="4" />
+    <rect x="94" y="82" width="18" height="12" rx="4" />
+  </g>
+
+  <circle cx="100" cy="30" r="6" fill="#22c55e" />
+</svg>

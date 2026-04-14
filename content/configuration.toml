@@ -2,50 +2,50 @@
 # we need to prefix all configuration keys with an underscore.
 
 [_.site]
-baseUrl = "http://zaggonaut.dev"
+baseUrl = "https://abdelrahmanelsayed.tech"
 
 [_.globalMeta]
-title = "Zaggonaut"
-description = "Retro-Inspired Theme & Built for Astro"
-longDescription = "Zaggonaut is a retro-inspired theme for Astro, built using TypeScript, TailwindCSS, and Astro."
-cardImage = "https://zaggonaut.dev/michael-dam-unsplash.webp"
-keywords = ["web development", "design", "technology"]
+title = "Abdelrahman Elsayed"
+description = "I love building products that solve real problems."
+longDescription = "Tech agnostic developer who picks the right tool for the job. Let's connect and build together."
+cardImage = "https://abdelrahmanelsayed.tech/profile.png"
+keywords = ["web development", "full-stack", "react", "next.js", "typescript"]
 
 [_.blogMeta]
-title = "Zaggonaut Blog"
-description = "Practical wisdom, unfiltered thoughts, and hot takes."
-longDescription = "Web development, tech trends, and the occasional programming mishap."
-cardImage = "https://zaggonaut.dev/michael-dam-unsplash.webp"
-keywords = ["web development", "design", "technology"]
+title = "Blog"
+description = "Personal writing: tech, life, and whatever I’m learning."
+longDescription = "A mix of software, product-building notes, and personal stories."
+cardImage = "https://abdelrahmanelsayed.tech/profile.png"
+keywords = ["web development", "software engineering", "javascript", "next.js", "personal", "music"]
 
 [_.projectMeta]
-title = "Zaggonaut Projects"
-description = "A list of my web development projects and developer tools."
-longDescription = "All of my projects, including both frontend and full-stack applications."
-cardImage = "https://zaggonaut.dev/michael-dam-unsplash.webp"
-keywords = ["web development", "design", "technology"]
+title = "Projects"
+description = "A selection of things I've built."
+longDescription = "Personal projects across full-stack web development."
+cardImage = "https://abdelrahmanelsayed.tech/profile.png"
+keywords = ["projects", "full-stack", "next.js", "react", "firebase", "mongodb"]
 
 [_.notFoundMeta]
-title = "Zaggonaut 404"
+title = "404"
 description = "The page you are looking for does not exist."
 longDescription = "The page you are looking for does not exist. Maybe it never existed. Spooky."
-cardImage = "https://zaggonaut.dev/michael-dam-unsplash.webp"
+cardImage = "https://abdelrahmanelsayed.tech/profile.png"
 
 [_.hero]
-title = "Zaggonaut"
-subtitle = "Retro-Inspired Theme &<br />Built for Astro"
-image = "https://zaggonaut.dev/michael-dam-unsplash.webp"
+title = "Abdelrahman Elsayed"
+subtitle = "I love building products that solve real problems. Tech agnostic developer who picks the right tool for the job. Let's connect and build together."
+image = "/profile.png"
 ctaText = "View Projects"
 ctaUrl = "/projects"
 
 [_.personal]
-name = "Zaggonaut"
-githubProfile = "https://github.com/RATIU5/zaggonaut"
-twitterProfile = "https://twitter.com"
-linkedinProfile = "https://linkedin.com/"
+name = "Abdelrahman Elsayed"
+githubProfile = "https://github.com/thehappyredwolf"
+twitterProfile = "https://x.com/thehappyredwolf"
+linkedinProfile = "https://linkedin.com/in/thehappyredwolf"
 
 [_.texts]
-articlesName = "Articles"
+articlesName = "Blog"
 projectsName = "Projects"
 viewAll = "View All"
 noArticles = "No articles found."

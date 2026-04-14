@@ -4,7 +4,7 @@ import Anchor from "./common/Anchor.astro";
 
 export type Props = {
 	title: string;
-	description: string;
+  description?: string;
 	url: string;
 	duration?: string;
 	timestamp?: Date;
@@ -17,9 +17,7 @@ const { title, description, url, duration, timestamp } = Astro.props;
   <Anchor url={url} class="text-xl">
     {title}
   </Anchor>
-  <p class="">
-    {description}
-  </p>
+  {description ? <p class="">{description}</p> : null}
   <div
     class="zag-muted zag-transition flex justify-between items-center"
   >
